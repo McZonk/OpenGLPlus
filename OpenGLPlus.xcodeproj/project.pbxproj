@@ -337,7 +337,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/OpenGLPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenGLPlus/OpenGLPlus-Prefix.pch";
+				GCC_PREFIX_HEADER = "OpenGLPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -349,7 +349,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/OpenGLPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenGLPlus/OpenGLPlus-Prefix.pch";
+				GCC_PREFIX_HEADER = "OpenGLPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
