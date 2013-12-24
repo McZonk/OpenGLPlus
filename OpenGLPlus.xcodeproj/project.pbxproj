@@ -128,8 +128,8 @@
 				50591ECB185C917D007F6117 /* C */,
 				50591ECC185C9183007F6117 /* ObjC */,
 			);
-			path = OpenGLPlus;
-			sourceTree = "<group>";
+			name = OpenGLPlus;
+			sourceTree = SOURCE_ROOT;
 		};
 		50591ECB185C917D007F6117 /* C */ = {
 			isa = PBXGroup;
