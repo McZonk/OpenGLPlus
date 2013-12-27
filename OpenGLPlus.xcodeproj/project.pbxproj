@@ -27,7 +27,6 @@
 		507BC7951861C0CD001F7789 /* GLPProgram+TransformFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 507BC7941861C0CD001F7789 /* GLPProgram+TransformFeedback.m */; };
 		50BC80EA1869C1F000F0CD4D /* GLPTextureBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */; };
 		50BC80EF1869C29E00F0CD4D /* GLPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */; };
-		50BC80F01869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80ED1869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.c */; };
 		50BC80F31869C79500F0CD4D /* GLPTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F21869C79500F0CD4D /* GLPTexture.m */; };
 		50BC80F61869CA6900F0CD4D /* GLPTexture+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F51869CA6900F0CD4D /* GLPTexture+CGImage.m */; };
 		50BC80F91869CB0F00F0CD4D /* GLPTexture+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */; };
@@ -95,8 +94,6 @@
 		50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPTextureBase.c; sourceTree = "<group>"; };
 		50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPPixelformat.c; sourceTree = "<group>"; };
 		50BC80EC1869C29E00F0CD4D /* GLPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPPixelformat.h; sourceTree = "<group>"; };
-		50BC80ED1869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "GLPPixelformat+CVPixelBuffer.c"; sourceTree = "<group>"; };
-		50BC80EE1869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPPixelformat+CVPixelBuffer.h"; sourceTree = "<group>"; };
 		50BC80F11869C79500F0CD4D /* GLPTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPTexture.h; sourceTree = "<group>"; };
 		50BC80F21869C79500F0CD4D /* GLPTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPTexture.m; sourceTree = "<group>"; };
 		50BC80F41869CA6900F0CD4D /* GLPTexture+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPTexture+CGImage.h"; sourceTree = "<group>"; };
@@ -174,8 +171,6 @@
 				50591EF9185D1025007F6117 /* GLPBase.c */,
 				50BC80EC1869C29E00F0CD4D /* GLPPixelformat.h */,
 				50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */,
-				50BC80EE1869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.h */,
-				50BC80ED1869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.c */,
 				50591EE4185CA220007F6117 /* GLPProgramBase.h */,
 				50591EE5185CA22C007F6117 /* GLPProgramBase.c */,
 				50591EF3185CEDB0007F6117 /* GLPShaderBase.h */,
@@ -334,7 +329,6 @@
 				50591EF5185CEDBC007F6117 /* GLPShaderBase.c in Sources */,
 				507BC78A1861ABE3001F7789 /* GLTransformFeedback.m in Sources */,
 				50591EEC185CA682007F6117 /* GLPProgram+LinkedProgram.m in Sources */,
-				50BC80F01869C29E00F0CD4D /* GLPPixelformat+CVPixelBuffer.c in Sources */,
 				50591EE9185CA491007F6117 /* GLPUniformBase.c in Sources */,
 				50BC8107186C301E00F0CD4D /* GLPRenderbuffer.m in Sources */,
 				50591EF2185CAA10007F6117 /* GLPShader.m in Sources */,
