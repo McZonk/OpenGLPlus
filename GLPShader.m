@@ -25,12 +25,13 @@
 	return nil;
 }
 
-- (instancetype)initWithType:(GLenum)type
+- (instancetype)initWithType:(GLenum)type_
 {
 	self = [super init];
 	if(self != nil)
 	{
-		shader = glCreateShader(type);
+		type = type_;
+		shader = glCreateShader(type_);
 		if(shader == 0)
 		{
 			return nil;
@@ -47,6 +48,7 @@
 	}
 }
 
+@synthesize GLType = type;
 @synthesize GLShader = shader;
 
 - (BOOL)compileSource:(NSString *)source error:(NSError **)error
@@ -72,7 +74,7 @@
 		}
 		else
 		{
-			NSLog(@"Error: %@", infoLog);
+			NSLog(@"%s:%d:error: %@", __FUNCTION__, __LINE__, infoLog);
 		}
 		return NO;
 	}
@@ -80,26 +82,45 @@
 	return YES;
 }
 
-- (BOOL)compileContentsOfFile:(NSString *)path error:(NSError **)error
+- (BOOL)compileContentsOfFile:(NSString *)path error:(NSError **)outError
 {
-	NSString *source = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:error];
+	NSError *error = nil;
+	NSString *source = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
 	if(source == nil)
 	{
+		if(outError != nil)
+		{
+			*outError = error;
+		}
+		else
+		{
+			NSLog(@"%s:%d:error: %@", __FUNCTION__, __LINE__, error);
+		}
 		return NO;
 	}
 	
-	return [self compileSource:source error:error];
+	return [self compileSource:source error:outError];
 }
 
-- (BOOL)compileContentsOfURL:(NSURL *)URL error:(NSError **)error
+- (BOOL)compileContentsOfURL:(NSURL *)URL error:(NSError **)outError
 {
-	NSString *source = [[NSString alloc] initWithContentsOfURL:URL encoding:NSUTF8StringEncoding error:error];
+	NSError *error = nil;
+	NSString *source = [[NSString alloc] initWithContentsOfURL:URL encoding:NSUTF8StringEncoding error:&error];
 	if(source == nil)
 	{
+		if(outError != nil)
+		{
+			*outError = error;
+		}
+		else
+		{
+			NSLog(@"%s:%d:error: %@", __FUNCTION__, __LINE__, error);
+		}
+		
 		return NO;
 	}
 	
-	return [self compileSource:source error:error];
+	return [self compileSource:source error:outError];
 }
 
 - (BOOL)compileResource:(NSString *)resource bundle:(NSBundle *)bundle error:(NSError **)error
@@ -110,6 +131,29 @@
 	}
 	
 	NSURL *URL = [bundle URLForResource:resource withExtension:nil];
+	if(URL == nil)
+	{
+		// try to find a matching URL by adding an extension
+		
+		NSArray *extensions = nil;
+		if(type == GL_VERTEX_SHADER)
+		{
+			extensions = @[ @"vsh", @"vs" ];
+		}
+		else if(type == GL_FRAGMENT_SHADER)
+		{
+			extensions = @[ @"fsh", @"fs" ];
+		}
+		
+		for(NSString *extension in extensions)
+		{
+			URL = [bundle URLForResource:resource withExtension:extension];
+			if(URL != nil)
+			{
+				break;
+			}
+		}
+	}
 	
 	return [self compileContentsOfURL:URL error:error];
 }

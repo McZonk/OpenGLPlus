@@ -7,6 +7,7 @@
 @interface GLPShader : NSObject <GLPObjectLabel>
 {
 @private
+	GLenum type;
 	GLuint shader;
 }
 
@@ -16,6 +17,7 @@
 
 - (instancetype)initWithType:(GLenum)type;
 
+@property (assign, nonatomic, readonly) GLenum GLType;
 @property (assign, nonatomic, readonly) GLuint GLShader;
 
 - (BOOL)compileSource:(NSString *)source error:(NSError **)error;
