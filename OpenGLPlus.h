@@ -27,6 +27,7 @@
 #import <OpenGLPlus/GLPProgram.h>
 #import <OpenGLPlus/GLPProgram+DebugInformation.h>
 #import <OpenGLPlus/GLPProgram+LinkedProgram.h>
+#import <OpenGLPlus/GLPProgram+ObjectLabel.h>
 #import <OpenGLPlus/GLPProgram+SetUniform.h>
 #import <OpenGLPlus/GLPProgram+XML.h>
 #import <OpenGLPlus/GLPRenderbuffer.h>

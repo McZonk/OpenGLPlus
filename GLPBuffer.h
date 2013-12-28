@@ -1,9 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import "GLPObjectLabel.h"
 
-
-@interface GLPBuffer : NSObject <GLPObjectLabel>
+@interface GLPBuffer : NSObject
 {
 @private
 	GLenum target;

@@ -72,18 +72,4 @@
 	return [NSString stringWithFormat:@"<%@: %p target:0x%04X object:%u>", self.class, self, target, buffer];
 }
 
-#pragma mark - GLPObjectLabel
-
-#if defined(GL_EXT_debug_label) && (GL_EXT_debug_label != 0)
-- (NSString *)objectLabel
-{
-	return GLPGetObjectLabelString(GL_BUFFER_OBJECT_EXT, buffer);
-}
-
-- (void)setObjectLabel:(NSString *)objectLabel
-{
-	GLPSetObjectLabelString(GL_BUFFER_OBJECT_EXT, buffer, objectLabel);
-}
-#endif /* GL_EXT_debug_label */
-
 @end

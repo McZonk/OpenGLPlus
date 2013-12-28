@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503221BD186F8C1000D95640 /* GLPProgram+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */; };
+		503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */; };
 		5036012E1869BB1700125C04 /* GLPProgram+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036012D1869BB1700125C04 /* GLPProgram+XML.m */; };
 		50591E9D185C913E007F6117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50591E9C185C913E007F6117 /* Foundation.framework */; };
 		50591EA2185C913E007F6117 /* OpenGLPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50591EA1185C913E007F6117 /* OpenGLPlus.h */; };
@@ -52,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		503221BB186F8C1000D95640 /* GLPProgram+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+ObjectLabel.h"; sourceTree = "<group>"; };
+		503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+ObjectLabel.m"; sourceTree = "<group>"; };
+		503221BE186F8E2F00D95640 /* GLPBuffer+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPBuffer+ObjectLabel.h"; sourceTree = "<group>"; };
+		503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPBuffer+ObjectLabel.m"; sourceTree = "<group>"; };
 		5036012C1869BB1700125C04 /* GLPProgram+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+XML.h"; sourceTree = "<group>"; };
 		5036012D1869BB1700125C04 /* GLPProgram+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+XML.m"; sourceTree = "<group>"; };
 		50591E99185C913E007F6117 /* libOpenGLPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenGLPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503221C1186F8E3600D95640 /* GLPBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				50591ECD185C919B007F6117 /* GLPBuffer.h */,
+				50591ECE185C919B007F6117 /* GLPBuffer.m */,
+				503221BE186F8E2F00D95640 /* GLPBuffer+ObjectLabel.h */,
+				503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */,
+			);
+			name = GLPBuffer;
+			sourceTree = "<group>";
+		};
 		50591E90185C913E007F6117 = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +203,7 @@
 		50591ECC185C9183007F6117 /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				50591ECD185C919B007F6117 /* GLPBuffer.h */,
-				50591ECE185C919B007F6117 /* GLPBuffer.m */,
+				503221C1186F8E3600D95640 /* GLPBuffer */,
 				50BC8108186C319D00F0CD4D /* GLPFramebuffer.h */,
 				50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */,
 				50591EE0185C99C9007F6117 /* GLPObjectLabel.h */,
@@ -214,10 +230,12 @@
 			children = (
 				50591EDD185C992D007F6117 /* GLPProgram.h */,
 				50591EDE185C992D007F6117 /* GLPProgram.m */,
-				50591EEA185CA682007F6117 /* GLPProgram+LinkedProgram.h */,
-				50591EEB185CA682007F6117 /* GLPProgram+LinkedProgram.m */,
 				50FDCFD1186378360007B77A /* GLPProgram+DebugInformation.h */,
 				50FDCFD2186378360007B77A /* GLPProgram+DebugInformation.m */,
+				50591EEA185CA682007F6117 /* GLPProgram+LinkedProgram.h */,
+				50591EEB185CA682007F6117 /* GLPProgram+LinkedProgram.m */,
+				503221BB186F8C1000D95640 /* GLPProgram+ObjectLabel.h */,
+				503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */,
 				50591EED185CA71E007F6117 /* GLPProgram+SetUniform.h */,
 				50591EEE185CA71E007F6117 /* GLPProgram+SetUniform.m */,
 				507BC7931861C0CD001F7789 /* GLPProgram+TransformFeedback.h */,
@@ -327,6 +345,7 @@
 				50BC80FC1869CCA900F0CD4D /* GLPTexture+NamedTexture.m in Sources */,
 				50BC80EF1869C29E00F0CD4D /* GLPPixelformat.c in Sources */,
 				50591EF5185CEDBC007F6117 /* GLPShaderBase.c in Sources */,
+				503221BD186F8C1000D95640 /* GLPProgram+ObjectLabel.m in Sources */,
 				507BC78A1861ABE3001F7789 /* GLTransformFeedback.m in Sources */,
 				50591EEC185CA682007F6117 /* GLPProgram+LinkedProgram.m in Sources */,
 				50591EE9185CA491007F6117 /* GLPUniformBase.c in Sources */,
@@ -348,6 +367,7 @@
 				50BC80FF1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m in Sources */,
 				5036012E1869BB1700125C04 /* GLPProgram+XML.m in Sources */,
 				50591EDF185C992D007F6117 /* GLPProgram.m in Sources */,
+				503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */,
 				50591EE6185CA22C007F6117 /* GLPProgramBase.c in Sources */,
 				50591EFA185D1025007F6117 /* GLPBase.c in Sources */,
 			);
