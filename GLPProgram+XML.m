@@ -91,6 +91,19 @@
 
 #pragma mark - NSXMLParserDelegate
 
+- (void)parserDidEndDocument:(NSXMLParser *)parser
+{
+	if(!self.program.linked)
+	{
+		NSError *error = nil;
+		if(![self.program link:&error])
+		{
+			self.error = error;
+			return;
+		}
+	}
+}
+
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributes
 {
 	self.attributes = attributes;
