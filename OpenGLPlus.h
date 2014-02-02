@@ -43,3 +43,5 @@
 #import <OpenGLPlus/NSError+GLPError.h>
 
 #import <OpenGLPlus/GLKTextureInfo+GLPTexture.h>
+
+#import <OpenGLPlus/EAGLContext+GLPBestRenderingAPI.h>
