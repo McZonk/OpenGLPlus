@@ -21,11 +21,11 @@ GLint glpProgramGetInfoLogLength(GLuint program)
 	return param;
 }
 
-char* glpProgramCopyInfoLog(GLuint program)
+GLchar* glpProgramCopyInfoLog(GLuint program)
 {
 	GLsizei length = glpProgramGetInfoLogLength(program);
 	
-	char *infoLog = (char *)malloc(length);
+	GLchar *infoLog = (GLchar *)malloc(length * sizeof(GLchar));
 	
 	glGetProgramInfoLog(program, length, 0, infoLog);
 	

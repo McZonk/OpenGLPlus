@@ -21,21 +21,19 @@ GLint glpShaderGetInfoLogLength(GLuint shader)
 	return param;
 }
 
-char *glpShaderCopyInfoLog(GLuint shader)
+GLchar *glpShaderCopyInfoLog(GLuint shader)
 {
 	GLsizei length = glpShaderGetInfoLogLength(shader);
 	
-	char *infoLog = (char *)malloc(length);
+	GLchar *infoLog = (GLchar *)malloc(length * sizeof(GLchar));
 	
 	glGetShaderInfoLog(shader, length, 0, infoLog);
 	
 	return infoLog;
 }
 
-GLboolean glpShaderCompileSource(GLuint shader, const char *text)
+GLboolean glpShaderCompileSource(GLuint shader, const GLchar *source)
 {
-	const char *source = text;
-	
 	glShaderSource(shader, 1, &source, 0);
 	
 	glCompileShader(shader);
