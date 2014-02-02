@@ -45,3 +45,4 @@
 #import <OpenGLPlus/GLKTextureInfo+GLPTexture.h>
 
 #import <OpenGLPlus/EAGLContext+GLPBestRenderingAPI.h>
+#import <OpenGLPlus/EAGLContext+GLPContextStack.h>
