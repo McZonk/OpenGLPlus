@@ -88,6 +88,11 @@
 	glBindFramebuffer(target, framebuffer);
 }
 
+- (void)unbindFramebuffer
+{
+	glBindFramebuffer(target, 0);
+}
+
 @synthesize GLTarget = target;
 @synthesize GLFramebuffer = framebuffer;
 

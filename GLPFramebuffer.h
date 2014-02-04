@@ -12,6 +12,7 @@
 @property (nonatomic, assign, readonly) GLuint GLFramebuffer;
 
 - (void)bindFramebuffer;
+- (void)unbindFramebuffer;
 
 @end
 

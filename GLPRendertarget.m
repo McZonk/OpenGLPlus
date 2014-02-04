@@ -95,4 +95,9 @@
 	glViewport(0, 0, self.width, self.height);
 }
 
+- (void)unbindFramebuffer
+{
+	[self.framebuffer unbindFramebuffer];
+}
+
 @end
