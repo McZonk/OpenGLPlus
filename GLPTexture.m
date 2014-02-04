@@ -114,7 +114,7 @@
 
 - (void)bindToUnit:(GLenum)unit
 {
-	glActiveTexture(unit);
+	glpActiveTexture(unit);
 	[self bind];
 }
 
