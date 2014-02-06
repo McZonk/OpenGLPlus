@@ -15,7 +15,7 @@
 		target = GL_RENDERBUFFER;
 		
 		glGenRenderbuffers(1, &renderbuffer);
-		if(renderbuffer != 0)
+		if(renderbuffer == 0)
 		{
 			return nil;
 		}
@@ -28,19 +28,39 @@
 	glDeleteRenderbuffers(1, &renderbuffer);
 }
 
-- (void)bind
+- (void)bindRenderbuffer
 {
 	glBindRenderbuffer(target, renderbuffer);
 }
 
+- (void)unbindRenderbuffer
+{
+	glBindRenderbuffer(target, 0);
+}
+
 - (void)setPixelformat:(GLPPixelformat)pixelformat width:(GLuint)width height:(GLuint)height
 {
-	[self bind];
+	[self bindRenderbuffer];
 	
 	GLuint internalFormat = glpPixelformatGetInternalFormat(pixelformat);
 	
 	glRenderbufferStorage(target, internalFormat, width, height);
 }
+
+- (GLint)getWidth
+{
+	GLint value;
+	glGetRenderbufferParameteriv(target, GL_RENDERBUFFER_WIDTH, &value);
+	return value;
+}
+
+- (GLint)getHeight
+{
+	GLint value;
+	glGetRenderbufferParameteriv(target, GL_RENDERBUFFER_HEIGHT, &value);
+	return value;
+}
+
 
 @synthesize GLTarget = target;
 @synthesize GLRenderbuffer = renderbuffer;

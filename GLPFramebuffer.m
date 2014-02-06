@@ -34,20 +34,20 @@
 
 - (void)attach:(GLenum)attachment texture:(id<GLPTexture>)texture level:(GLint)level
 {
-	[self bindFramebuffer];
-	glFramebufferTexture2D(GL_FRAMEBUFFER, attachment, texture.GLTarget, texture.GLTexture, level);
+//	[self bindFramebuffer];
+	glFramebufferTexture2D(target, attachment, texture.GLTarget, texture.GLTexture, level);
 }
 
 - (void)attach:(GLenum)attachment renderbuffer:(GLPRenderbuffer *)renderbuffer
 {
-	[self bindFramebuffer];
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, attachment, GL_RENDERBUFFER, renderbuffer.GLRenderbuffer);
+//	[self bindFramebuffer];
+	glFramebufferRenderbuffer(target, attachment, renderbuffer.GLTarget, renderbuffer.GLRenderbuffer);
 }
 
 - (void)detach:(GLenum)attachment
 {
-	[self bindFramebuffer];
-	glFramebufferRenderbuffer(GL_FRAMEBUFFER, attachment, GL_RENDERBUFFER, 0);
+//	[self bindFramebuffer];
+	glFramebufferRenderbuffer(target, attachment, GL_RENDERBUFFER, 0);
 }
 
 - (BOOL)valid
@@ -57,8 +57,8 @@
 
 - (GLenum)status
 {
-	[self bindFramebuffer];
-	return glCheckFramebufferStatus(GL_FRAMEBUFFER);
+//	[self bindFramebuffer];
+	return glCheckFramebufferStatus(target);
 }
 
 #if 0

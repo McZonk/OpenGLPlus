@@ -11,9 +11,13 @@
 
 + (instancetype)renderbuffer;
 
-- (void)bind;
+- (void)bindRenderbuffer;
+- (void)unbindRenderbuffer;
 
 - (void)setPixelformat:(GLPPixelformat)pixelformat width:(GLuint)width height:(GLuint)height;
+
+- (GLint)getWidth;
+- (GLint)getHeight;
 
 @property (nonatomic, assign, readonly) GLenum GLTarget;
 @property (nonatomic, assign, readonly) GLuint GLRenderbuffer;
