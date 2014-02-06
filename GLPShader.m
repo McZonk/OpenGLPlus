@@ -67,8 +67,8 @@
 		if(error != nil)
 		{
 			NSDictionary *userInfo = @{
-				@"source" : source,
-				@"infoLog" : infoLog,
+				GLPErrorSourceKey : source,
+				GLPErrorInfoLogKey : infoLog,
 			};
 			*error = [NSError errorWithDomain:GLPErrorDomain code:GLPErrorShaderCompilerError userInfo:userInfo];
 		}
