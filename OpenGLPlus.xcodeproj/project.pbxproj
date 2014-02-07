@@ -38,6 +38,7 @@
 		50BC8107186C301E00F0CD4D /* GLPRenderbuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8106186C301E00F0CD4D /* GLPRenderbuffer.m */; };
 		50BC810A186C319D00F0CD4D /* GLPFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */; };
 		50BCBFEF18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */; };
+		50BCC00018A512690040A71B /* NSError+GLPProgramLinkerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */; };
 		50D1A7EC189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D1A7EB189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m */; };
 		50E8DFA918A1AAEF00E4D50E /* EAGLPContextStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E8DFA818A1AAEF00E4D50E /* EAGLPContextStack.m */; };
 		50FDCFD3186378360007B77A /* GLPProgram+DebugInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FDCFD2186378360007B77A /* GLPProgram+DebugInformation.m */; };
@@ -121,6 +122,8 @@
 		50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPFramebuffer.m; sourceTree = "<group>"; };
 		50BCBFED18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPShaderCompilerError.h"; sourceTree = "<group>"; };
 		50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPShaderCompilerError.m"; sourceTree = "<group>"; };
+		50BCBFFE18A512690040A71B /* NSError+GLPProgramLinkerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPProgramLinkerError.h"; sourceTree = "<group>"; };
+		50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPProgramLinkerError.m"; sourceTree = "<group>"; };
 		50D1A7EA189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLContext+GLPBestRenderingAPI.h"; sourceTree = "<group>"; };
 		50D1A7EB189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EAGLContext+GLPBestRenderingAPI.m"; sourceTree = "<group>"; };
 		50E8DFA718A1AAEF00E4D50E /* EAGLPContextStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLPContextStack.h; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 			children = (
 				50591EF6185CEF17007F6117 /* NSError+GLPError.h */,
 				50591EF7185CEF17007F6117 /* NSError+GLPError.m */,
+				50BCBFFE18A512690040A71B /* NSError+GLPProgramLinkerError.h */,
+				50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */,
 				50BCBFED18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.h */,
 				50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */,
 			);
@@ -369,6 +374,7 @@
 				50591EF2185CAA10007F6117 /* GLPShader.m in Sources */,
 				50BC80F31869C79500F0CD4D /* GLPTexture.m in Sources */,
 				50BC80F61869CA6900F0CD4D /* GLPTexture+CGImage.m in Sources */,
+				50BCC00018A512690040A71B /* NSError+GLPProgramLinkerError.m in Sources */,
 				50591EE2185C99C9007F6117 /* GLPObjectLabel.m in Sources */,
 				50682F9718623DF400FC2BA4 /* GLPShader+CompiledShader.m in Sources */,
 				50591EEF185CA71E007F6117 /* GLPProgram+SetUniform.m in Sources */,
