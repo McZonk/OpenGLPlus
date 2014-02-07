@@ -41,6 +41,7 @@
 #import <OpenGLPlus/GLPVertexArray.h>
 
 #import <OpenGLPlus/NSError+GLPError.h>
+#import <OpenGLPlus/NSError+GLPShaderCompilerError.h>
 
 #import <OpenGLPlus/GLKTextureInfo+GLPTexture.h>
 
