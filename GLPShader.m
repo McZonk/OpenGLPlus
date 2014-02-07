@@ -69,6 +69,7 @@
 			NSDictionary *userInfo = @{
 				GLPErrorSourceKey : source,
 				GLPErrorInfoLogKey : infoLog,
+				NSLocalizedDescriptionKey: infoLog,
 			};
 			*error = [NSError errorWithDomain:GLPErrorDomain code:GLPErrorShaderCompilerError userInfo:userInfo];
 		}
