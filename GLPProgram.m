@@ -61,8 +61,11 @@
 		
 		if(error != nil)
 		{
-			NSDictionary *userInfo = @{ @"infoLog": infoLog };
-			*error = [NSError errorWithDomain:GLPErrorDomain code:GLPErrorShaderLinkerError userInfo:userInfo];
+			NSDictionary *userInfo = @{
+				GLPErrorInfoLogKey: infoLog,
+				NSLocalizedDescriptionKey: infoLog,
+			};
+			*error = [NSError errorWithDomain:GLPErrorDomain code:GLPErrorProgramLinkerError userInfo:userInfo];
 		}
 		else
 		{
