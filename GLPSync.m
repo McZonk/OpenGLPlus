@@ -14,6 +14,16 @@
 	return [[self alloc] init];
 }
 
++ (GLenum)syncWithClientWait:(NSTimeInterval)timeout
+{
+	return [[self sync] clientWait:timeout];
+}
+
++ (void)syncWithWait:(NSTimeInterval)timeout
+{
+	[[self sync] wait:timeout];
+}
+
 - (instancetype)init
 {
 	self = [super init];

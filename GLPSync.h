@@ -5,6 +5,9 @@
 
 + (instancetype)sync;
 
++ (GLenum)syncWithClientWait:(NSTimeInterval)timeout;
++ (void)syncWithWait:(NSTimeInterval)timeout;
+
 - (BOOL)signaled;
 
 - (GLenum)clientWait:(NSTimeInterval)timeout;
