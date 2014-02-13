@@ -27,7 +27,7 @@
 		context = (EAGLContext *)NSNull.null;
 	}
 	
-	BOOL success = (EAGLContext.currentContext = newContext);
+	BOOL success = [EAGLContext setCurrentContext:newContext];
 	if(!success)
 	{
 		return NO;
@@ -53,7 +53,7 @@
 		context = nil;
 	}
 	
-	EAGLContext.currentContext = context;
+	[EAGLContext setCurrentContext:context];
 }
 
 @end
