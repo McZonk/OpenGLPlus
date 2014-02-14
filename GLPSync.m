@@ -1,12 +1,5 @@
 #import "GLPSync.h"
 
-@interface GLPSync () {
-	GLsync sync;
-}
-
-@end
-
-
 @implementation GLPSync
 
 + (instancetype)sync
@@ -41,6 +34,8 @@
 		glDeleteSyncAPPLE(sync);
 	}
 }
+
+@synthesize GLSync = sync;
 
 - (BOOL)signaled
 {

@@ -35,6 +35,7 @@
 #import <OpenGLPlus/GLPShader.h>
 #import <OpenGLPlus/GLPShader+CompiledShader.h>
 #import <OpenGLPlus/GLPSync.h>
+#import <OpenGLPlus/GLPSync+ObjectLabel.h>
 #import <OpenGLPlus/GLPTexture.h>
 #import <OpenGLPlus/GLPTexture+CGImage.h>
 #import <OpenGLPlus/GLPTexture+NamedTexture.h>

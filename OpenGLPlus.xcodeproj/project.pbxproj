@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500817FE18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */; };
 		503221BD186F8C1000D95640 /* GLPProgram+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */; };
 		503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */; };
 		5036012E1869BB1700125C04 /* GLPProgram+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036012D1869BB1700125C04 /* GLPProgram+XML.m */; };
@@ -59,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		500817FC18AD3B75007DEAA6 /* GLPSync+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPSync+ObjectLabel.h"; sourceTree = "<group>"; };
+		500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPSync+ObjectLabel.m"; sourceTree = "<group>"; };
 		503221BB186F8C1000D95640 /* GLPProgram+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+ObjectLabel.h"; sourceTree = "<group>"; };
 		503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+ObjectLabel.m"; sourceTree = "<group>"; };
 		503221BE186F8E2F00D95640 /* GLPBuffer+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPBuffer+ObjectLabel.h"; sourceTree = "<group>"; };
@@ -147,6 +150,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500817FB18AD3B5A007DEAA6 /* GLPSync */ = {
+			isa = PBXGroup;
+			children = (
+				5078F3C918A82FC300770EBC /* GLPSync.h */,
+				5078F3CA18A82FC300770EBC /* GLPSync.m */,
+				500817FC18AD3B75007DEAA6 /* GLPSync+ObjectLabel.h */,
+				500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */,
+			);
+			name = GLPSync;
+			sourceTree = "<group>";
+		};
 		503221C1186F8E3600D95640 /* GLPBuffer */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +243,7 @@
 				50BC8102186C2FC900F0CD4D /* GLPRendertarget.h */,
 				50BC8103186C2FC900F0CD4D /* GLPRendertarget.m */,
 				50BC80E61869C1AB00F0CD4D /* GLPShader */,
-				5078F3C918A82FC300770EBC /* GLPSync.h */,
-				5078F3CA18A82FC300770EBC /* GLPSync.m */,
+				500817FB18AD3B5A007DEAA6 /* GLPSync */,
 				50BC80E71869C1BC00F0CD4D /* GLPTexture */,
 				507BC7881861ABE3001F7789 /* GLTransformFeedback.h */,
 				507BC7891861ABE3001F7789 /* GLTransformFeedback.m */,
@@ -400,6 +413,7 @@
 				503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */,
 				50591EE6185CA22C007F6117 /* GLPProgramBase.c in Sources */,
 				50591EFA185D1025007F6117 /* GLPBase.c in Sources */,
+				500817FE18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
