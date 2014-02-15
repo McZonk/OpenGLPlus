@@ -8,6 +8,9 @@ void GLPSetObjectLabelString(GLenum type, GLuint object, NSString *label);
 #endif /* GL_EXT_debug_label */
 
 
+/**
+ @see http://www.opengl.org/registry/specs/EXT/EXT_debug_label.txt
+ */
 @protocol GLPObjectLabel <NSObject>
 @required
 
