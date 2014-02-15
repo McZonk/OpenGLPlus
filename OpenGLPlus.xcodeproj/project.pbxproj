@@ -347,10 +347,10 @@
 				50BC80F51869CA6900F0CD4D /* GLPTexture+CGImage.m */,
 				50BC80FA1869CCA900F0CD4D /* GLPTexture+NamedTexture.h */,
 				50BC80FB1869CCA900F0CD4D /* GLPTexture+NamedTexture.m */,
-				50BC80F71869CB0F00F0CD4D /* GLPTexture+UIImage.h */,
-				50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */,
 				50B634DE18AF75220087EBC5 /* GLPTexture+ObjectLabel.h */,
 				50B634DF18AF75220087EBC5 /* GLPTexture+ObjectLabel.m */,
+				50BC80F71869CB0F00F0CD4D /* GLPTexture+UIImage.h */,
+				50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */,
 			);
 			name = GLPTexture;
 			sourceTree = "<group>";
