@@ -8,6 +8,8 @@
 
 #import "GLPProgram+TransformFeedback.h"
 
+#if defined(GL_ES_VERSION_3_0) && (GL_ES_VERSION_3_0 > 0)
+
 @implementation GLPProgram (TransformFeedback)
 
 - (void)transformFeedbackVaryings:(NSArray *)varyings bufferMode:(GLenum)bufferMode
@@ -29,3 +31,5 @@
 }
 
 @end
+
+#endif
