@@ -33,6 +33,7 @@
 		50B634E418AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634E318AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m */; };
 		50B634E818AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634E718AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m */; };
 		50B634EC18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634EB18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m */; };
+		50B634EF18AF7A710087EBC5 /* GLPShader+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */; };
 		50BC80EA1869C1F000F0CD4D /* GLPTextureBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */; };
 		50BC80EF1869C29E00F0CD4D /* GLPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */; };
 		50BC80F31869C79500F0CD4D /* GLPTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F21869C79500F0CD4D /* GLPTexture.m */; };
@@ -118,6 +119,8 @@
 		50B634E718AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPFramebuffer+ObjectLabel.m"; sourceTree = "<group>"; };
 		50B634EA18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPVertexArray+ObjectLabel.h"; sourceTree = "<group>"; };
 		50B634EB18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPVertexArray+ObjectLabel.m"; sourceTree = "<group>"; };
+		50B634ED18AF7A710087EBC5 /* GLPShader+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPShader+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPShader+ObjectLabel.m"; sourceTree = "<group>"; };
 		50BC80E81869C1E700F0CD4D /* GLPTextureBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPTextureBase.h; sourceTree = "<group>"; };
 		50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPTextureBase.c; sourceTree = "<group>"; };
 		50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPPixelformat.c; sourceTree = "<group>"; };
@@ -329,6 +332,8 @@
 				50591EF1185CAA10007F6117 /* GLPShader.m */,
 				50682F9518623DF400FC2BA4 /* GLPShader+CompiledShader.h */,
 				50682F9618623DF400FC2BA4 /* GLPShader+CompiledShader.m */,
+				50B634ED18AF7A710087EBC5 /* GLPShader+ObjectLabel.h */,
+				50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */,
 			);
 			name = GLPShader;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				50BC80F91869CB0F00F0CD4D /* GLPTexture+UIImage.m in Sources */,
 				50BC80EA1869C1F000F0CD4D /* GLPTextureBase.c in Sources */,
 				50B634E418AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m in Sources */,
+				50B634EF18AF7A710087EBC5 /* GLPShader+ObjectLabel.m in Sources */,
 				50B634E818AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m in Sources */,
 				50591EF8185CEF17007F6117 /* NSError+GLPError.m in Sources */,
 				50BC80FF1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m in Sources */,
