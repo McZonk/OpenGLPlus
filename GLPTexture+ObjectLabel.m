@@ -1,7 +1,5 @@
 #import "GLPTexture+ObjectLabel.h"
 
-#import "GLPObjectLabel.h"
-
 
 @implementation GLPTexture (ObjectLabel)
 

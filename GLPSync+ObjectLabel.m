@@ -1,7 +1,5 @@
 #import "GLPSync+ObjectLabel.h"
 
-#import "GLPObjectLabel.h"
-
 
 @implementation GLPSync (ObjectLabel)
 

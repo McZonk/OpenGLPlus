@@ -1,7 +1,5 @@
 #import "GLPBuffer+ObjectLabel.h"
 
-#import "GLPObjectLabel.h"
-
 
 @implementation GLPBuffer (ObjectLabel)
 

@@ -1,7 +1,5 @@
 #import "GLPProgram+ObjectLabel.h"
 
-#import "GLPObjectLabel.h"
-
 
 @implementation GLPProgram (ObjectLabel)
 

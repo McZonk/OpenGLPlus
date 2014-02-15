@@ -1,6 +1,9 @@
 #import "GLPProgram.h"
 
-@interface GLPProgram (ObjectLabel)
+#import "GLPObjectLabel.h"
+
+
+@interface GLPProgram (ObjectLabel) <GLPObjectLabel>
 
 #if defined(GL_EXT_debug_label) && (GL_EXT_debug_label != 0)
 @property (nonatomic, copy) NSString *objectLabel;
