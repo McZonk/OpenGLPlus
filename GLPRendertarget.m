@@ -77,6 +77,11 @@
 	[self.texture bindToUnit:unit];
 }
 
+- (void)unbind
+{
+	[self.texture unbind];
+}
+
 #pragma mark - GLPFramebuffer
 
 - (GLuint)GLFramebuffer

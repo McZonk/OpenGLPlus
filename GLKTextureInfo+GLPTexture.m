@@ -26,4 +26,9 @@
 	[self bind];
 }
 
+- (void)unbind
+{
+	glBindTexture(self.target, 0);
+}
+
 @end

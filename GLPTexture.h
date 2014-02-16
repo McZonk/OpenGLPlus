@@ -11,6 +11,7 @@
 
 - (void)bind;
 - (void)bindToUnit:(GLenum)unit;
+- (void)unbind;
 
 @end
 
@@ -40,7 +41,5 @@
 - (void)setMinFilter:(GLenum)minFilter magFilter:(GLenum)magFilter;
 
 - (void)generateMipmap;
-
-- (void)unbind;
 
 @end
