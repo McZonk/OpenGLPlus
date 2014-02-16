@@ -11,4 +11,6 @@
 
 - (BOOL)setCGImage:(CGImageRef)image;
 
+- (BOOL)setCGImage:(CGImageRef)image target:(GLenum)target;
+
 @end

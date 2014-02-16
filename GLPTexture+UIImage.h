@@ -14,6 +14,7 @@
 - (instancetype)initWithUIImage:(UIImage *)image;
 
 - (BOOL)setUIImage:(UIImage *)image;
+- (BOOL)setUIImage:(UIImage *)image target:(GLenum)target;
 
 @end
 

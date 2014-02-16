@@ -11,15 +11,23 @@
 {
 	self = [self init];
 	if(self != nil) {
-		if(![self setCGImage:image]) {
+		if(![self setCGImage:image])
+		{
 			return nil;
 		}
 	}
 	return self;
 }
 
-- (BOOL)setCGImage:(CGImageRef)image {
-	if(!image) {
+- (BOOL)setCGImage:(CGImageRef)image
+{
+	return [self setCGImage:image target:target];
+}
+
+- (BOOL)setCGImage:(CGImageRef)image target:(GLenum)target_
+{
+	if(image == NULL)
+	{
 		return NO;
 	}
 	
@@ -82,7 +90,7 @@
 	CGContextClearRect(context, rect);
 	CGContextDrawImage(context, rect, image);
 	
-	[self setFormat:format width:(GLsizei)width height:(GLsizei)height pixels:data];
+	[self setFormat:format width:(GLsizei)width height:(GLsizei)height pixels:data target:target_];
 	
 	CGContextRelease(context), context = NULL;
 	free(data), data = NULL;

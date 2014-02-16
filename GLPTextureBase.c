@@ -32,6 +32,10 @@ void glpTextureSetDefaults(GLenum target, GLuint texture)
 	// clamp to edge will enable non-power of two textures
 	glTexParameteri(target, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 	glTexParameteri(target, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	if(target == GL_TEXTURE_CUBE_MAP)
+	{
+		glTexParameteri(target, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+	}
 }
 
 int glpTextureSetData(GLenum target, GLPPixelformat pixelformat, GLsizei width, GLsizei height, const void* pixels, GLint level) {

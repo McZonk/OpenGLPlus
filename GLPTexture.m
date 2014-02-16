@@ -17,6 +17,11 @@
 	return [[self alloc] init];
 }
 
++ (instancetype)textureWithTarget:(GLenum)target
+{
+	return [[self alloc] initWithTarget:target];
+}
+
 + (instancetype)textureWithFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height
 {
 	return [[self alloc] initWithFormat:format width:width height:height];
@@ -29,10 +34,15 @@
 
 - (instancetype)init
 {
-	return [self initWithGLTexture:glpTextureCreate(GL_TEXTURE_2D) freeWhenDone:YES];
+	return [self initWithTarget:GL_TEXTURE_2D];
 }
 
-- (instancetype)initWithGLTexture:(GLuint)texture_ freeWhenDone:(BOOL)freeWhenDone_
+- (instancetype)initWithTarget:(GLenum)target_
+{
+	return [self initWithTarget:target_ texture:glpTextureCreate(target_) freeWhenDone:YES];
+}
+
+- (instancetype)initWithTarget:(GLenum)target_ texture:(GLuint)texture_ freeWhenDone:(BOOL)freeWhenDone_
 {
 	self = [super init];
 	if(self != nil)
@@ -41,8 +51,8 @@
 		{
 			return nil;
 		}
-
-		target = GL_TEXTURE_2D;
+		
+		target = target_;
 		texture = texture_;
 		freeWhenDone = freeWhenDone_;
 	}
@@ -79,23 +89,37 @@
 
 - (void)setFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height
 {
-	[self setFormat:format width:width height:height pixels:NULL];
+	[self setFormat:format width:width height:height pixels:NULL target:target level:0];
 }
 
 - (void)setFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height pixels:(const void *)pixels
 {
-	[self setFormat:format width:width height:height pixels:pixels level:0];
+	[self setFormat:format width:width height:height pixels:pixels target:target level:0];
 }
 
 - (void)setFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height pixels:(const void *)pixels level:(GLint)level
 {
-	glpTextureSetData(target, format, width, height, pixels, level);
+	[self setFormat:format width:width height:height pixels:pixels target:target level:level];
+}
+
+- (void)setFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height pixels:(const void *)pixels target:(GLenum)target_
+{
+	[self setFormat:format width:width height:height pixels:pixels target:target_ level:0];
+}
+
+- (void)setFormat:(GLPPixelformat)format width:(GLsizei)width height:(GLsizei)height pixels:(const void *)pixels target:(GLenum)target_ level:(GLint)level
+{
+	glpTextureSetData(target_, format, width, height, pixels, level);
 }
 
 - (void)setWrap:(GLenum)wrap
 {
 	glTexParameteri(target, GL_TEXTURE_WRAP_S, wrap);
 	glTexParameteri(target, GL_TEXTURE_WRAP_T, wrap);
+	if(target == GL_TEXTURE_CUBE_MAP)
+	{
+		glTexParameteri(target, GL_TEXTURE_WRAP_R, wrap);
+	}
 }
 
 - (void)setFilter:(GLenum)filter

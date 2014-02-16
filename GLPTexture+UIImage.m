@@ -27,7 +27,12 @@
 
 - (BOOL)setUIImage:(UIImage *)image
 {
-	return [self setCGImage:image.CGImage];
+	return [self setUIImage:image target:target];
+}
+
+- (BOOL)setUIImage:(UIImage *)image target:(GLenum)target_
+{
+	return [self setCGImage:image.CGImage target:target_];
 }
 
 @end
