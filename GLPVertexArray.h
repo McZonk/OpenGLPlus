@@ -1,9 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import "GLPObjectLabel.h"
 
-
-@interface GLPVertexArray : NSObject <GLPObjectLabel>
+@interface GLPVertexArray : NSObject
 {
 @private
 	GLuint vertexArray;

@@ -1,10 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import "GLPObjectLabel.h"
-#import "NSError+GLPError.h"
 
-
-@interface GLPShader : NSObject <GLPObjectLabel>
+@interface GLPShader : NSObject
 {
 @private
 	GLenum type;

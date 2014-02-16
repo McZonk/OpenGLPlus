@@ -2,6 +2,7 @@
 
 #import "GLPShader.h"
 #import "GLPProgramBase.h"
+#import "NSError+GLPError.h"
 
 
 @implementation GLPProgram
