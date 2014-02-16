@@ -39,4 +39,8 @@
 - (void)setFilter:(GLenum)filter;
 - (void)setMinFilter:(GLenum)minFilter magFilter:(GLenum)magFilter;
 
+- (void)generateMipmap;
+
+- (void)unbind;
+
 @end

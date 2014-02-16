@@ -9,7 +9,10 @@ GLuint glpTextureCreate(const GLenum target)
 	
 	glGenTextures(1, &texture);
 	
-	glpTextureSetDefaults(target, texture);
+	if(texture != 0)
+	{
+		glpTextureSetDefaults(target, texture);
+	}
 	
 	return texture;
 }

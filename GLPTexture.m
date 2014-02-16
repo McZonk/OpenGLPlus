@@ -37,6 +37,11 @@
 	self = [super init];
 	if(self != nil)
 	{
+		if(texture_ == 0)
+		{
+			return nil;
+		}
+
 		target = GL_TEXTURE_2D;
 		texture = texture_;
 		freeWhenDone = freeWhenDone_;
@@ -105,6 +110,11 @@
 	glTexParameteri(target, GL_TEXTURE_MAG_FILTER, magFilter);
 }
 
+- (void)generateMipmap
+{
+	glGenerateMipmap(target);
+}
+
 #pragma mark - EEGLTexture protocol
 
 - (void)bind
@@ -116,6 +126,11 @@
 {
 	glpActiveTexture(unit);
 	[self bind];
+}
+
+- (void)unbind
+{
+	glBindTexture(target, 0);
 }
 
 @end
