@@ -36,8 +36,12 @@
 	{
 		self.texture = texture;
 		
-		self.framebuffer = [GLPFramebuffer framebuffer];
-		[self.framebuffer attach:GL_COLOR_ATTACHMENT0 texture:texture];
+		GLPFramebuffer *framebuffer = [GLPFramebuffer framebuffer];
+		self.framebuffer = framebuffer;
+		
+		[framebuffer bindFramebuffer];
+		[framebuffer attach:GL_COLOR_ATTACHMENT0 texture:texture];
+		[framebuffer unbindFramebuffer];
 	}
 	return self;
 }
