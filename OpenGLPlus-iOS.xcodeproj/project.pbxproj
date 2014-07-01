@@ -406,7 +406,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = McZonk;
 			};
-			buildConfigurationList = 50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus" */;
+			buildConfigurationList = 50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus" */ = {
+		50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50591EBA185C913E007F6117 /* Debug */,
