@@ -4,15 +4,23 @@ GLenum glpPixelformatGetFormat(GLPPixelformat format) {
 	switch(format) {
 		case GLPPixelformatAlpha8:
 			return GL_ALPHA;
+#ifdef GL_LUMINANCE
 		case GLPPixelformatLuminance8:
 			return GL_LUMINANCE;
+#endif
+#ifdef GL_RED_EXT
 		case GLPPixelformatRed8:
 			return GL_RED_EXT;
-			
+#endif
+
+#ifdef GL_LUMINANCE_ALPHA
 		case GLPPixelformatLuminanceAlpha88:
 			return GL_LUMINANCE_ALPHA;
+#endif
+#ifdef GL_RG_EXT
 		case GLPPixelformatRedGreen8:
 			return GL_RG_EXT;
+#endif
 			
 		case GLPPixelformatRGB565:
 			return GL_RGB565;
@@ -28,14 +36,22 @@ GLenum glpPixelformatGetFormat(GLPPixelformat format) {
 		case GLPPixelformatBGRA8888:
 			return GL_BGRA;
 			
+#ifdef GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG
 		case GLPPixelformatPVRRGB2BPP:
 			return GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG
 		case GLPPixelformatPVRRGB4BPP:
 			return GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG
 		case GLPPixelformatPVRRGBA2BPP:
 			return GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
 		case GLPPixelformatPVRRGBA4BPP:
 			return GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG;
+#endif
 
 		default:
 			return GL_NONE;
@@ -46,15 +62,23 @@ GLenum glpPixelformatGetInternalFormat(GLPPixelformat format) {
 	switch(format) {
 		case GLPPixelformatAlpha8:
 			return GL_ALPHA;
+#ifdef GL_LUMINANCE
 		case GLPPixelformatLuminance8:
 			return GL_LUMINANCE;
+#endif
+#ifdef GL_RED_EXT
 		case GLPPixelformatRed8:
 			return GL_RED_EXT;
+#endif
 			
+#ifdef GL_LUMINANCE_ALPHA
 		case GLPPixelformatLuminanceAlpha88:
 			return GL_LUMINANCE_ALPHA;
+#endif
+#ifdef GL_RG_EXT
 		case GLPPixelformatRedGreen8:
 			return GL_RG_EXT;
+#endif
 			
 		case GLPPixelformatRGB565:
 			return GL_RGB565;
@@ -70,14 +94,22 @@ GLenum glpPixelformatGetInternalFormat(GLPPixelformat format) {
 		case GLPPixelformatBGRA8888:
 			return GL_RGBA;
 			
+#ifdef GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG
 		case GLPPixelformatPVRRGB2BPP:
 			return GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG
 		case GLPPixelformatPVRRGB4BPP:
 			return GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG
 		case GLPPixelformatPVRRGBA2BPP:
 			return GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
+#endif
+#ifdef GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
 		case GLPPixelformatPVRRGBA4BPP:
-			return GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
+			return GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG;
+#endif
 			
 		default:
 			return GL_NONE;

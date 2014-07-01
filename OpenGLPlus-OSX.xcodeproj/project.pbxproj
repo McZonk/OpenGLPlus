@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500817FE18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */; };
+		503221BD186F8C1000D95640 /* GLPProgram+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */; };
+		503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */; };
+		5036012E1869BB1700125C04 /* GLPProgram+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 5036012D1869BB1700125C04 /* GLPProgram+XML.m */; };
+		50591E9D185C913E007F6117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50591E9C185C913E007F6117 /* Foundation.framework */; };
+		50591EA2185C913E007F6117 /* OpenGLPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50591EA1185C913E007F6117 /* OpenGLPlus.h */; };
+		50591ECF185C919B007F6117 /* GLPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591ECE185C919B007F6117 /* GLPBuffer.m */; };
+		50591EDA185C96BC007F6117 /* GLPVertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591ED9185C96BC007F6117 /* GLPVertexArray.m */; };
+		50591EDF185C992D007F6117 /* GLPProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EDE185C992D007F6117 /* GLPProgram.m */; };
+		50591EE2185C99C9007F6117 /* GLPObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EE1185C99C9007F6117 /* GLPObjectLabel.m */; };
+		50591EE6185CA22C007F6117 /* GLPProgramBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50591EE5185CA22C007F6117 /* GLPProgramBase.c */; };
+		50591EE9185CA491007F6117 /* GLPUniformBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50591EE8185CA491007F6117 /* GLPUniformBase.c */; };
+		50591EEC185CA682007F6117 /* GLPProgram+LinkedProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EEB185CA682007F6117 /* GLPProgram+LinkedProgram.m */; };
+		50591EEF185CA71E007F6117 /* GLPProgram+SetUniform.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EEE185CA71E007F6117 /* GLPProgram+SetUniform.m */; };
+		50591EF2185CAA10007F6117 /* GLPShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EF1185CAA10007F6117 /* GLPShader.m */; };
+		50591EF5185CEDBC007F6117 /* GLPShaderBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50591EF4185CEDBC007F6117 /* GLPShaderBase.c */; };
+		50591EF8185CEF17007F6117 /* NSError+GLPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50591EF7185CEF17007F6117 /* NSError+GLPError.m */; };
+		50591EFA185D1025007F6117 /* GLPBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50591EF9185D1025007F6117 /* GLPBase.c */; };
+		50682F9718623DF400FC2BA4 /* GLPShader+CompiledShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 50682F9618623DF400FC2BA4 /* GLPShader+CompiledShader.m */; };
+		5078F3CB18A82FC300770EBC /* GLPSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 5078F3CA18A82FC300770EBC /* GLPSync.m */; };
+		507BC78A1861ABE3001F7789 /* GLTransformFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 507BC7891861ABE3001F7789 /* GLTransformFeedback.m */; };
+		507BC7951861C0CD001F7789 /* GLPProgram+TransformFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 507BC7941861C0CD001F7789 /* GLPProgram+TransformFeedback.m */; };
+		50B634E018AF75220087EBC5 /* GLPTexture+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634DF18AF75220087EBC5 /* GLPTexture+ObjectLabel.m */; };
+		50B634E418AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634E318AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m */; };
+		50B634E818AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634E718AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m */; };
+		50B634EC18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634EB18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m */; };
+		50B634EF18AF7A710087EBC5 /* GLPShader+ObjectLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */; };
+		50BC80EA1869C1F000F0CD4D /* GLPTextureBase.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */; };
+		50BC80EF1869C29E00F0CD4D /* GLPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */; };
+		50BC80F31869C79500F0CD4D /* GLPTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F21869C79500F0CD4D /* GLPTexture.m */; };
+		50BC80F61869CA6900F0CD4D /* GLPTexture+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F51869CA6900F0CD4D /* GLPTexture+CGImage.m */; };
+		50BC80F91869CB0F00F0CD4D /* GLPTexture+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */; };
+		50BC80FC1869CCA900F0CD4D /* GLPTexture+NamedTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80FB1869CCA900F0CD4D /* GLPTexture+NamedTexture.m */; };
+		50BC80FF1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC80FE1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m */; };
+		50BC8104186C2FC900F0CD4D /* GLPRendertarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8103186C2FC900F0CD4D /* GLPRendertarget.m */; };
+		50BC8107186C301E00F0CD4D /* GLPRenderbuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8106186C301E00F0CD4D /* GLPRenderbuffer.m */; };
+		50BC810A186C319D00F0CD4D /* GLPFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */; };
+		50BCBFEF18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */; };
+		50BCC00018A512690040A71B /* NSError+GLPProgramLinkerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */; };
+		50FDCFD3186378360007B77A /* GLPProgram+DebugInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FDCFD2186378360007B77A /* GLPProgram+DebugInformation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50591E97185C913E007F6117 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				50591EA2185C913E007F6117 /* OpenGLPlus.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		500817FC18AD3B75007DEAA6 /* GLPSync+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPSync+ObjectLabel.h"; sourceTree = "<group>"; };
+		500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPSync+ObjectLabel.m"; sourceTree = "<group>"; };
+		503221BB186F8C1000D95640 /* GLPProgram+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+ObjectLabel.h"; sourceTree = "<group>"; };
+		503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+ObjectLabel.m"; sourceTree = "<group>"; };
+		503221BE186F8E2F00D95640 /* GLPBuffer+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPBuffer+ObjectLabel.h"; sourceTree = "<group>"; };
+		503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPBuffer+ObjectLabel.m"; sourceTree = "<group>"; };
+		5036012C1869BB1700125C04 /* GLPProgram+XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+XML.h"; sourceTree = "<group>"; };
+		5036012D1869BB1700125C04 /* GLPProgram+XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+XML.m"; sourceTree = "<group>"; };
+		50591E99185C913E007F6117 /* libOpenGLPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenGLPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50591E9C185C913E007F6117 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50591EA0185C913E007F6117 /* OpenGLPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLPlus-Prefix.pch"; sourceTree = "<group>"; };
+		50591EA1185C913E007F6117 /* OpenGLPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLPlus.h; sourceTree = "<group>"; };
+		50591EAA185C913E007F6117 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		50591EAD185C913E007F6117 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		50591ECD185C919B007F6117 /* GLPBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPBuffer.h; sourceTree = "<group>"; };
+		50591ECE185C919B007F6117 /* GLPBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPBuffer.m; sourceTree = "<group>"; };
+		50591ED8185C96BC007F6117 /* GLPVertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPVertexArray.h; sourceTree = "<group>"; };
+		50591ED9185C96BC007F6117 /* GLPVertexArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPVertexArray.m; sourceTree = "<group>"; };
+		50591EDD185C992D007F6117 /* GLPProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPProgram.h; sourceTree = "<group>"; };
+		50591EDE185C992D007F6117 /* GLPProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPProgram.m; sourceTree = "<group>"; };
+		50591EE0185C99C9007F6117 /* GLPObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPObjectLabel.h; sourceTree = "<group>"; };
+		50591EE1185C99C9007F6117 /* GLPObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPObjectLabel.m; sourceTree = "<group>"; };
+		50591EE3185C9C86007F6117 /* GLPBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPBase.h; sourceTree = "<group>"; };
+		50591EE4185CA220007F6117 /* GLPProgramBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPProgramBase.h; sourceTree = "<group>"; };
+		50591EE5185CA22C007F6117 /* GLPProgramBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPProgramBase.c; sourceTree = "<group>"; };
+		50591EE7185CA481007F6117 /* GLPUniformBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPUniformBase.h; sourceTree = "<group>"; };
+		50591EE8185CA491007F6117 /* GLPUniformBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPUniformBase.c; sourceTree = "<group>"; };
+		50591EEA185CA682007F6117 /* GLPProgram+LinkedProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+LinkedProgram.h"; sourceTree = "<group>"; };
+		50591EEB185CA682007F6117 /* GLPProgram+LinkedProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+LinkedProgram.m"; sourceTree = "<group>"; };
+		50591EED185CA71E007F6117 /* GLPProgram+SetUniform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+SetUniform.h"; sourceTree = "<group>"; };
+		50591EEE185CA71E007F6117 /* GLPProgram+SetUniform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+SetUniform.m"; sourceTree = "<group>"; };
+		50591EF0185CAA10007F6117 /* GLPShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPShader.h; sourceTree = "<group>"; };
+		50591EF1185CAA10007F6117 /* GLPShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPShader.m; sourceTree = "<group>"; };
+		50591EF3185CEDB0007F6117 /* GLPShaderBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPShaderBase.h; sourceTree = "<group>"; };
+		50591EF4185CEDBC007F6117 /* GLPShaderBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPShaderBase.c; sourceTree = "<group>"; };
+		50591EF6185CEF17007F6117 /* NSError+GLPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPError.h"; sourceTree = "<group>"; };
+		50591EF7185CEF17007F6117 /* NSError+GLPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPError.m"; sourceTree = "<group>"; };
+		50591EF9185D1025007F6117 /* GLPBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPBase.c; sourceTree = "<group>"; };
+		50682F9518623DF400FC2BA4 /* GLPShader+CompiledShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPShader+CompiledShader.h"; sourceTree = "<group>"; };
+		50682F9618623DF400FC2BA4 /* GLPShader+CompiledShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPShader+CompiledShader.m"; sourceTree = "<group>"; };
+		5078F3C918A82FC300770EBC /* GLPSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPSync.h; sourceTree = "<group>"; };
+		5078F3CA18A82FC300770EBC /* GLPSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPSync.m; sourceTree = "<group>"; };
+		507BC7881861ABE3001F7789 /* GLTransformFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTransformFeedback.h; sourceTree = "<group>"; };
+		507BC7891861ABE3001F7789 /* GLTransformFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTransformFeedback.m; sourceTree = "<group>"; };
+		507BC7931861C0CD001F7789 /* GLPProgram+TransformFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+TransformFeedback.h"; sourceTree = "<group>"; };
+		507BC7941861C0CD001F7789 /* GLPProgram+TransformFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+TransformFeedback.m"; sourceTree = "<group>"; };
+		50B634DE18AF75220087EBC5 /* GLPTexture+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPTexture+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634DF18AF75220087EBC5 /* GLPTexture+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPTexture+ObjectLabel.m"; sourceTree = "<group>"; };
+		50B634E218AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPRenderbuffer+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634E318AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPRenderbuffer+ObjectLabel.m"; sourceTree = "<group>"; };
+		50B634E618AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPFramebuffer+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634E718AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPFramebuffer+ObjectLabel.m"; sourceTree = "<group>"; };
+		50B634EA18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPVertexArray+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634EB18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPVertexArray+ObjectLabel.m"; sourceTree = "<group>"; };
+		50B634ED18AF7A710087EBC5 /* GLPShader+ObjectLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPShader+ObjectLabel.h"; sourceTree = "<group>"; };
+		50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPShader+ObjectLabel.m"; sourceTree = "<group>"; };
+		50BC80E81869C1E700F0CD4D /* GLPTextureBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPTextureBase.h; sourceTree = "<group>"; };
+		50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPTextureBase.c; sourceTree = "<group>"; };
+		50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLPPixelformat.c; sourceTree = "<group>"; };
+		50BC80EC1869C29E00F0CD4D /* GLPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPPixelformat.h; sourceTree = "<group>"; };
+		50BC80F11869C79500F0CD4D /* GLPTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPTexture.h; sourceTree = "<group>"; };
+		50BC80F21869C79500F0CD4D /* GLPTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPTexture.m; sourceTree = "<group>"; };
+		50BC80F41869CA6900F0CD4D /* GLPTexture+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPTexture+CGImage.h"; sourceTree = "<group>"; };
+		50BC80F51869CA6900F0CD4D /* GLPTexture+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPTexture+CGImage.m"; sourceTree = "<group>"; };
+		50BC80F71869CB0F00F0CD4D /* GLPTexture+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPTexture+UIImage.h"; sourceTree = "<group>"; };
+		50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPTexture+UIImage.m"; sourceTree = "<group>"; };
+		50BC80FA1869CCA900F0CD4D /* GLPTexture+NamedTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPTexture+NamedTexture.h"; sourceTree = "<group>"; };
+		50BC80FB1869CCA900F0CD4D /* GLPTexture+NamedTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPTexture+NamedTexture.m"; sourceTree = "<group>"; };
+		50BC80FD1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLKTextureInfo+GLPTexture.h"; sourceTree = "<group>"; };
+		50BC80FE1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLKTextureInfo+GLPTexture.m"; sourceTree = "<group>"; };
+		50BC8102186C2FC900F0CD4D /* GLPRendertarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPRendertarget.h; sourceTree = "<group>"; };
+		50BC8103186C2FC900F0CD4D /* GLPRendertarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPRendertarget.m; sourceTree = "<group>"; };
+		50BC8105186C301E00F0CD4D /* GLPRenderbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPRenderbuffer.h; sourceTree = "<group>"; };
+		50BC8106186C301E00F0CD4D /* GLPRenderbuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPRenderbuffer.m; sourceTree = "<group>"; };
+		50BC8108186C319D00F0CD4D /* GLPFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPFramebuffer.h; sourceTree = "<group>"; };
+		50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPFramebuffer.m; sourceTree = "<group>"; };
+		50BCBFED18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPShaderCompilerError.h"; sourceTree = "<group>"; };
+		50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPShaderCompilerError.m"; sourceTree = "<group>"; };
+		50BCBFFE18A512690040A71B /* NSError+GLPProgramLinkerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPProgramLinkerError.h"; sourceTree = "<group>"; };
+		50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPProgramLinkerError.m"; sourceTree = "<group>"; };
+		50D1A7EA189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLContext+GLPBestRenderingAPI.h"; sourceTree = "<group>"; };
+		50D1A7EB189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EAGLContext+GLPBestRenderingAPI.m"; sourceTree = "<group>"; };
+		50E8DFA718A1AAEF00E4D50E /* EAGLPContextStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLPContextStack.h; sourceTree = "<group>"; };
+		50E8DFA818A1AAEF00E4D50E /* EAGLPContextStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLPContextStack.m; sourceTree = "<group>"; };
+		50FDCFD1186378360007B77A /* GLPProgram+DebugInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPProgram+DebugInformation.h"; sourceTree = "<group>"; };
+		50FDCFD2186378360007B77A /* GLPProgram+DebugInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPProgram+DebugInformation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50591E96185C913E007F6117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50591E9D185C913E007F6117 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500817FB18AD3B5A007DEAA6 /* GLPSync */ = {
+			isa = PBXGroup;
+			children = (
+				5078F3C918A82FC300770EBC /* GLPSync.h */,
+				5078F3CA18A82FC300770EBC /* GLPSync.m */,
+				500817FC18AD3B75007DEAA6 /* GLPSync+ObjectLabel.h */,
+				500817FD18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m */,
+			);
+			name = GLPSync;
+			sourceTree = "<group>";
+		};
+		503221C1186F8E3600D95640 /* GLPBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				50591ECD185C919B007F6117 /* GLPBuffer.h */,
+				50591ECE185C919B007F6117 /* GLPBuffer.m */,
+				503221BE186F8E2F00D95640 /* GLPBuffer+ObjectLabel.h */,
+				503221BF186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m */,
+			);
+			name = GLPBuffer;
+			sourceTree = "<group>";
+		};
+		50591E90185C913E007F6117 = {
+			isa = PBXGroup;
+			children = (
+				50591E9E185C913E007F6117 /* OpenGLPlus */,
+				50591E9B185C913E007F6117 /* Frameworks */,
+				50591E9A185C913E007F6117 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50591E9A185C913E007F6117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50591E99185C913E007F6117 /* libOpenGLPlus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50591E9B185C913E007F6117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50591E9C185C913E007F6117 /* Foundation.framework */,
+				50591EAA185C913E007F6117 /* XCTest.framework */,
+				50591EAD185C913E007F6117 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50591E9E185C913E007F6117 /* OpenGLPlus */ = {
+			isa = PBXGroup;
+			children = (
+				50591EA0185C913E007F6117 /* OpenGLPlus-Prefix.pch */,
+				50591EA1185C913E007F6117 /* OpenGLPlus.h */,
+				50591ECB185C917D007F6117 /* C */,
+				50591ECC185C9183007F6117 /* ObjC */,
+			);
+			name = OpenGLPlus;
+			sourceTree = SOURCE_ROOT;
+		};
+		50591ECB185C917D007F6117 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				50591EE3185C9C86007F6117 /* GLPBase.h */,
+				50591EF9185D1025007F6117 /* GLPBase.c */,
+				50BC80EC1869C29E00F0CD4D /* GLPPixelformat.h */,
+				50BC80EB1869C29E00F0CD4D /* GLPPixelformat.c */,
+				50591EE4185CA220007F6117 /* GLPProgramBase.h */,
+				50591EE5185CA22C007F6117 /* GLPProgramBase.c */,
+				50591EF3185CEDB0007F6117 /* GLPShaderBase.h */,
+				50591EF4185CEDBC007F6117 /* GLPShaderBase.c */,
+				50591EE7185CA481007F6117 /* GLPUniformBase.h */,
+				50591EE8185CA491007F6117 /* GLPUniformBase.c */,
+				50BC80E81869C1E700F0CD4D /* GLPTextureBase.h */,
+				50BC80E91869C1F000F0CD4D /* GLPTextureBase.c */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		50591ECC185C9183007F6117 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				503221C1186F8E3600D95640 /* GLPBuffer */,
+				50B634E518AF792E0087EBC5 /* GLPFramebuffer */,
+				50591EE0185C99C9007F6117 /* GLPObjectLabel.h */,
+				50591EE1185C99C9007F6117 /* GLPObjectLabel.m */,
+				50BC80E51869C19B00F0CD4D /* GLPProgram */,
+				50B634E118AF78B20087EBC5 /* GLPRenderbuffer */,
+				50BC8102186C2FC900F0CD4D /* GLPRendertarget.h */,
+				50BC8103186C2FC900F0CD4D /* GLPRendertarget.m */,
+				50BC80E61869C1AB00F0CD4D /* GLPShader */,
+				500817FB18AD3B5A007DEAA6 /* GLPSync */,
+				50BC80E71869C1BC00F0CD4D /* GLPTexture */,
+				507BC7881861ABE3001F7789 /* GLTransformFeedback.h */,
+				507BC7891861ABE3001F7789 /* GLTransformFeedback.m */,
+				50B634E918AF79BF0087EBC5 /* GLPVertexArray */,
+				50BC81011869D07300F0CD4D /* NSFoundation */,
+				50BC81001869D05000F0CD4D /* GLKit */,
+				50D1A7EA189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.h */,
+				50D1A7EB189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m */,
+				50E8DFA718A1AAEF00E4D50E /* EAGLPContextStack.h */,
+				50E8DFA818A1AAEF00E4D50E /* EAGLPContextStack.m */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
+		50B634E118AF78B20087EBC5 /* GLPRenderbuffer */ = {
+			isa = PBXGroup;
+			children = (
+				50BC8105186C301E00F0CD4D /* GLPRenderbuffer.h */,
+				50BC8106186C301E00F0CD4D /* GLPRenderbuffer.m */,
+				50B634E218AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.h */,
+				50B634E318AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m */,
+			);
+			name = GLPRenderbuffer;
+			sourceTree = "<group>";
+		};
+		50B634E518AF792E0087EBC5 /* GLPFramebuffer */ = {
+			isa = PBXGroup;
+			children = (
+				50BC8108186C319D00F0CD4D /* GLPFramebuffer.h */,
+				50BC8109186C319D00F0CD4D /* GLPFramebuffer.m */,
+				50B634E618AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.h */,
+				50B634E718AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m */,
+			);
+			name = GLPFramebuffer;
+			sourceTree = "<group>";
+		};
+		50B634E918AF79BF0087EBC5 /* GLPVertexArray */ = {
+			isa = PBXGroup;
+			children = (
+				50591ED8185C96BC007F6117 /* GLPVertexArray.h */,
+				50591ED9185C96BC007F6117 /* GLPVertexArray.m */,
+				50B634EA18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.h */,
+				50B634EB18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m */,
+			);
+			name = GLPVertexArray;
+			sourceTree = "<group>";
+		};
+		50BC80E51869C19B00F0CD4D /* GLPProgram */ = {
+			isa = PBXGroup;
+			children = (
+				50591EDD185C992D007F6117 /* GLPProgram.h */,
+				50591EDE185C992D007F6117 /* GLPProgram.m */,
+				50FDCFD1186378360007B77A /* GLPProgram+DebugInformation.h */,
+				50FDCFD2186378360007B77A /* GLPProgram+DebugInformation.m */,
+				50591EEA185CA682007F6117 /* GLPProgram+LinkedProgram.h */,
+				50591EEB185CA682007F6117 /* GLPProgram+LinkedProgram.m */,
+				503221BB186F8C1000D95640 /* GLPProgram+ObjectLabel.h */,
+				503221BC186F8C1000D95640 /* GLPProgram+ObjectLabel.m */,
+				50591EED185CA71E007F6117 /* GLPProgram+SetUniform.h */,
+				50591EEE185CA71E007F6117 /* GLPProgram+SetUniform.m */,
+				507BC7931861C0CD001F7789 /* GLPProgram+TransformFeedback.h */,
+				507BC7941861C0CD001F7789 /* GLPProgram+TransformFeedback.m */,
+				5036012C1869BB1700125C04 /* GLPProgram+XML.h */,
+				5036012D1869BB1700125C04 /* GLPProgram+XML.m */,
+			);
+			name = GLPProgram;
+			sourceTree = "<group>";
+		};
+		50BC80E61869C1AB00F0CD4D /* GLPShader */ = {
+			isa = PBXGroup;
+			children = (
+				50591EF0185CAA10007F6117 /* GLPShader.h */,
+				50591EF1185CAA10007F6117 /* GLPShader.m */,
+				50682F9518623DF400FC2BA4 /* GLPShader+CompiledShader.h */,
+				50682F9618623DF400FC2BA4 /* GLPShader+CompiledShader.m */,
+				50B634ED18AF7A710087EBC5 /* GLPShader+ObjectLabel.h */,
+				50B634EE18AF7A710087EBC5 /* GLPShader+ObjectLabel.m */,
+			);
+			name = GLPShader;
+			sourceTree = "<group>";
+		};
+		50BC80E71869C1BC00F0CD4D /* GLPTexture */ = {
+			isa = PBXGroup;
+			children = (
+				50BC80F11869C79500F0CD4D /* GLPTexture.h */,
+				50BC80F21869C79500F0CD4D /* GLPTexture.m */,
+				50BC80F41869CA6900F0CD4D /* GLPTexture+CGImage.h */,
+				50BC80F51869CA6900F0CD4D /* GLPTexture+CGImage.m */,
+				50BC80FA1869CCA900F0CD4D /* GLPTexture+NamedTexture.h */,
+				50BC80FB1869CCA900F0CD4D /* GLPTexture+NamedTexture.m */,
+				50B634DE18AF75220087EBC5 /* GLPTexture+ObjectLabel.h */,
+				50B634DF18AF75220087EBC5 /* GLPTexture+ObjectLabel.m */,
+				50BC80F71869CB0F00F0CD4D /* GLPTexture+UIImage.h */,
+				50BC80F81869CB0F00F0CD4D /* GLPTexture+UIImage.m */,
+			);
+			name = GLPTexture;
+			sourceTree = "<group>";
+		};
+		50BC81001869D05000F0CD4D /* GLKit */ = {
+			isa = PBXGroup;
+			children = (
+				50BC80FD1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.h */,
+				50BC80FE1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m */,
+			);
+			name = GLKit;
+			sourceTree = "<group>";
+		};
+		50BC81011869D07300F0CD4D /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				50591EF6185CEF17007F6117 /* NSError+GLPError.h */,
+				50591EF7185CEF17007F6117 /* NSError+GLPError.m */,
+				50BCBFFE18A512690040A71B /* NSError+GLPProgramLinkerError.h */,
+				50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */,
+				50BCBFED18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.h */,
+				50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */,
+			);
+			name = NSFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50591E98185C913E007F6117 /* OpenGLPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50591EBC185C913E007F6117 /* Build configuration list for PBXNativeTarget "OpenGLPlus" */;
+			buildPhases = (
+				50591E95185C913E007F6117 /* Sources */,
+				50591E96185C913E007F6117 /* Frameworks */,
+				50591E97185C913E007F6117 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLPlus;
+			productName = OpenGLPlus;
+			productReference = 50591E99185C913E007F6117 /* libOpenGLPlus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50591E91185C913E007F6117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = McZonk;
+			};
+			buildConfigurationList = 50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus-OSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50591E90185C913E007F6117;
+			productRefGroup = 50591E9A185C913E007F6117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50591E98185C913E007F6117 /* OpenGLPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50591E95185C913E007F6117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BCBFEF18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m in Sources */,
+				50591ECF185C919B007F6117 /* GLPBuffer.m in Sources */,
+				50BC80FC1869CCA900F0CD4D /* GLPTexture+NamedTexture.m in Sources */,
+				50BC80EF1869C29E00F0CD4D /* GLPPixelformat.c in Sources */,
+				50591EF5185CEDBC007F6117 /* GLPShaderBase.c in Sources */,
+				503221BD186F8C1000D95640 /* GLPProgram+ObjectLabel.m in Sources */,
+				507BC78A1861ABE3001F7789 /* GLTransformFeedback.m in Sources */,
+				50591EEC185CA682007F6117 /* GLPProgram+LinkedProgram.m in Sources */,
+				50591EE9185CA491007F6117 /* GLPUniformBase.c in Sources */,
+				50BC8107186C301E00F0CD4D /* GLPRenderbuffer.m in Sources */,
+				50591EF2185CAA10007F6117 /* GLPShader.m in Sources */,
+				50BC80F31869C79500F0CD4D /* GLPTexture.m in Sources */,
+				50BC80F61869CA6900F0CD4D /* GLPTexture+CGImage.m in Sources */,
+				50B634E018AF75220087EBC5 /* GLPTexture+ObjectLabel.m in Sources */,
+				50B634EC18AF79CF0087EBC5 /* GLPVertexArray+ObjectLabel.m in Sources */,
+				50BCC00018A512690040A71B /* NSError+GLPProgramLinkerError.m in Sources */,
+				50591EE2185C99C9007F6117 /* GLPObjectLabel.m in Sources */,
+				50682F9718623DF400FC2BA4 /* GLPShader+CompiledShader.m in Sources */,
+				50591EEF185CA71E007F6117 /* GLPProgram+SetUniform.m in Sources */,
+				50BC810A186C319D00F0CD4D /* GLPFramebuffer.m in Sources */,
+				50BC8104186C2FC900F0CD4D /* GLPRendertarget.m in Sources */,
+				507BC7951861C0CD001F7789 /* GLPProgram+TransformFeedback.m in Sources */,
+				50FDCFD3186378360007B77A /* GLPProgram+DebugInformation.m in Sources */,
+				50591EDA185C96BC007F6117 /* GLPVertexArray.m in Sources */,
+				5078F3CB18A82FC300770EBC /* GLPSync.m in Sources */,
+				50BC80F91869CB0F00F0CD4D /* GLPTexture+UIImage.m in Sources */,
+				50BC80EA1869C1F000F0CD4D /* GLPTextureBase.c in Sources */,
+				50B634E418AF78D20087EBC5 /* GLPRenderbuffer+ObjectLabel.m in Sources */,
+				50B634EF18AF7A710087EBC5 /* GLPShader+ObjectLabel.m in Sources */,
+				50B634E818AF793D0087EBC5 /* GLPFramebuffer+ObjectLabel.m in Sources */,
+				50591EF8185CEF17007F6117 /* NSError+GLPError.m in Sources */,
+				50BC80FF1869D03D00F0CD4D /* GLKTextureInfo+GLPTexture.m in Sources */,
+				5036012E1869BB1700125C04 /* GLPProgram+XML.m in Sources */,
+				50591EDF185C992D007F6117 /* GLPProgram.m in Sources */,
+				503221C0186F8E2F00D95640 /* GLPBuffer+ObjectLabel.m in Sources */,
+				50591EE6185CA22C007F6117 /* GLPProgramBase.c in Sources */,
+				50591EFA185D1025007F6117 /* GLPBase.c in Sources */,
+				500817FE18AD3B75007DEAA6 /* GLPSync+ObjectLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50591EBA185C913E007F6117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					..,
+					.,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50591EBB185C913E007F6117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					..,
+					.,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50591EBD185C913E007F6117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /tmp/OpenGLPlus.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLPlus-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		50591EBE185C913E007F6117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /tmp/OpenGLPlus.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLPlus-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50591EBA185C913E007F6117 /* Debug */,
+				50591EBB185C913E007F6117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50591EBC185C913E007F6117 /* Build configuration list for PBXNativeTarget "OpenGLPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50591EBD185C913E007F6117 /* Debug */,
+				50591EBE185C913E007F6117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50591E91185C913E007F6117 /* Project object */;
+}
