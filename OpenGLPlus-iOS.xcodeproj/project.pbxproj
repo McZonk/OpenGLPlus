@@ -145,6 +145,7 @@
 		50BCBFEE18A4F0EB0040A71B /* NSError+GLPShaderCompilerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPShaderCompilerError.m"; sourceTree = "<group>"; };
 		50BCBFFE18A512690040A71B /* NSError+GLPProgramLinkerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+GLPProgramLinkerError.h"; sourceTree = "<group>"; };
 		50BCBFFF18A512690040A71B /* NSError+GLPProgramLinkerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+GLPProgramLinkerError.m"; sourceTree = "<group>"; };
+		50D199F719640B1F00B40610 /* GLPInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPInclude.h; sourceTree = "<group>"; };
 		50D1A7EA189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLContext+GLPBestRenderingAPI.h"; sourceTree = "<group>"; };
 		50D1A7EB189EF58B00F3D28B /* EAGLContext+GLPBestRenderingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EAGLContext+GLPBestRenderingAPI.m"; sourceTree = "<group>"; };
 		50E8DFA718A1AAEF00E4D50E /* EAGLPContextStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLPContextStack.h; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 			children = (
 				50591EA0185C913E007F6117 /* OpenGLPlus-Prefix.pch */,
 				50591EA1185C913E007F6117 /* OpenGLPlus.h */,
+				50D199F719640B1F00B40610 /* GLPInclude.h */,
 				50591ECB185C917D007F6117 /* C */,
 				50591ECC185C9183007F6117 /* ObjC */,
 			);
@@ -403,7 +405,7 @@
 		50591E91185C913E007F6117 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = McZonk;
 			};
 			buildConfigurationList = 50591E94185C913E007F6117 /* Build configuration list for PBXProject "OpenGLPlus-iOS" */;
@@ -478,7 +480,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -522,7 +523,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

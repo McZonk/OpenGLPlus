@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+#import "GLPInclude.h"
+
 
 @class GLPShader;
 
