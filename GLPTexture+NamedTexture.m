@@ -17,6 +17,12 @@
 
 + (instancetype)textureNamed:(NSString *)name
 {
+	UIImage *image = [UIImage imageNamed:name];
+	if(image != nil)
+	{
+		return [self textureWithUIImage:image];
+	}
+	
 	return [self textureNamed:name bundle:nil];
 }
 
