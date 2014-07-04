@@ -13,7 +13,7 @@
 	self = [super init];
 	if(self != nil)
 	{
-		glGenVertexArraysOES(1, &vertexArray);
+		glGenVertexArrays(1, &vertexArray);
 		if(vertexArray == 0)
 		{
 			return nil;
@@ -26,7 +26,7 @@
 {
 	if(vertexArray != 0)
 	{
-		glDeleteVertexArraysOES(1, &vertexArray);
+		glDeleteVertexArrays(1, &vertexArray);
 	}
 }
 
@@ -34,12 +34,12 @@
 
 - (void)bind
 {
-	glBindVertexArrayOES(vertexArray);
+	glBindVertexArray(vertexArray);
 }
 
 - (void)unbind
 {
-	glBindVertexArrayOES(0);
+	glBindVertexArray(0);
 }
 
 - (NSString *)description
