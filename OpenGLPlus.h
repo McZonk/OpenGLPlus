@@ -1,11 +1,8 @@
 #pragma once
 
-#include <OpenGLES/ES3/gl.h>
-#include <OpenGLES/ES3/glext.h>
+#include <TargetConditionals.h>
 
-//#include <OpenGLES/ES2/gl.h>
-#include <OpenGLES/ES2/glext.h>
-
+#include <OpenGLPlus/GLPInclude.h>
 
 #pragma mark C
 
@@ -64,6 +61,10 @@
 
 #import <OpenGLPlus/GLKTextureInfo+GLPTexture.h>
 
+#if defined(TARGET_OS_IPHONE) && (TARGET_OS_IPHONE > 0)
+
 #import <OpenGLPlus/EAGLContext+GLPBestRenderingAPI.h>
 
 #import <OpenGLPlus/EAGLPContextStack.h>
+
+#endif /* TARGET_OS_IPHONE */
