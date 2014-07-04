@@ -17,11 +17,13 @@
 
 + (instancetype)textureNamed:(NSString *)name
 {
+#if defined(TARGET_OS_IPHONE) && (TARGET_OS_IPHONE > 0)
 	UIImage *image = [UIImage imageNamed:name];
 	if(image != nil)
 	{
 		return [self textureWithUIImage:image];
 	}
+#endif
 	
 	return [self textureNamed:name bundle:nil];
 }
