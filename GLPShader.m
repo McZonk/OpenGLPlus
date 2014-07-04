@@ -76,7 +76,7 @@
 		}
 		else
 		{
-			NSLog(@"%s:%d:error: %@", __FUNCTION__, __LINE__, infoLog);
+			NSLog(@"%s:%d:error: %@:%@", __FUNCTION__, __LINE__, type == GL_VERTEX_SHADER ? @"Vertex" : @"Fragment", infoLog);
 		}
 		return NO;
 	}
